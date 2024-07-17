@@ -118,3 +118,14 @@ ul.tags li:hover {
         opacity: 0;
     }
 }
+
+@media (max-width: 600px) {
+    .scroller {
+        width: 100%;
+    }
+
+    #container h3 {
+        margin-bottom: 0.2em;
+    }
+
+}

@@ -191,3 +191,80 @@ footer a:visited {
     text-decoration: none;
     font-weight: 500;
 }
+
+/* MOBILE STYLES  */
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #page {
+        margin: 0 auto;
+        padding: 0 1em;
+    }
+
+    header h2 {
+        margin-bottom: 0.5em;
+    }
+
+    .search-form input {
+        width: calc(100% - 2em);
+        margin-top: 1em;
+    }
+
+    .search-form button {
+        width: 100%;
+        margin-top: 0.5em;
+    }
+
+    .tooltip {
+        left: 0;
+        top: 40px;
+    }
+
+    #stats .grid {
+        margin: 0 1em;
+    }
+
+    #stats .grid div {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    #stats .grid h5 {
+        margin: 1em 0 0.5em;
+    }
+
+    #stats .grid p {
+        margin: 0 0 0.5em;
+    }
+
+    #articles {
+        row-gap: 2em;
+    }
+
+    .article {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .article .article-image {
+        margin-bottom: 1em;
+    }
+
+    .article .article-content h3 {
+        font-size: 1.1em;
+    }
+
+    .article .article-content p {
+        font-size: 0.8em;
+    }
+
+    .article .meta {
+        margin-top: 1em;
+    }
+
+    footer {}
+}
