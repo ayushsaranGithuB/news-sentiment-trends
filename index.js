@@ -12,9 +12,6 @@ const cacheSuccesses = cache("90 minutes", onlyStatus200);
 // Fetch Environment Variables
 require("dotenv").config();
 
-// Import the SearchTopic function from the SearchTopic.js file
-// SearchTopic = require("./SearchTopic");
-
 // tell node that we are creating an express app
 const app = express();
 
