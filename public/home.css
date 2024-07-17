@@ -1,0 +1,120 @@
+#container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SEARCH FORM */
+
+.search-form {
+    margin: 0.5em 0 1em;
+    position: relative;
+}
+
+.search-form input {
+    padding: 1em;
+    border: 2px solid #939393;
+    border-radius: 8px;
+}
+
+.search-form button {
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #313131;
+    cursor: pointer;
+    color: #fff;
+}
+
+.tooltip {
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    left: 30px;
+    top: 55px;
+    animation: fade-out 2s ease-in-out;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.tooltip::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+.scroller {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 800px;
+    margin: 0 auto;
+    padding: 1em 0 1em;
+    text-align: center;
+}
+
+.scroller h4 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+    font-weight: 500;
+    font-size: 0.8em;
+    margin-bottom: 2em;
+}
+
+ul.tags {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 20px;
+    animation: scroll-left 15s linear infinite;
+    width: max-content;
+}
+
+ul.tags li {
+    background-color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: scale 0.5s;
+}
+
+ul.tags li:hover {
+    scale: 1.3;
+    background-color: #eff0e6;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
