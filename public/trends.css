@@ -91,6 +91,17 @@ h2 {
     border-color: transparent transparent black transparent;
 }
 
+#loading {
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#loading.hide {
+    display: none;
+}
+
 /* STATS  */
 
 #stats {}

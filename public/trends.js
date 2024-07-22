@@ -8,6 +8,7 @@ async function fetchData() {
   const apiResponse = await response.json();
 
   document.getElementById("page-title").innerText = search;
+  document.getElementById("loading").classList.add("hide");
 
   makeChart(apiResponse.result);
   showArticles(apiResponse.result);
